@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnSecondVC(_ sender: Any) {
+        let goToHomeBtn = self.storyboard?.instantiateViewController(withIdentifier: "secondVCIdentifier") as! SanjugViewController
+        self.navigationController?.pushViewController(goToHomeBtn, animated: true)
+    }
+    
 }
 
